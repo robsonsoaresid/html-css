@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,34 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th  {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(ood) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
         }
     </style>
 </head>
@@ -30,6 +56,7 @@
     <!--
         ANTOMIAS PARA TABELAS GRANDES
         TABLE
+            caption 
             THEAD
                 TR, TD, TH
             TBODY
@@ -38,154 +65,155 @@
                 TR, TD, TH
     -->
                 <table>
+                    <caption>População das Unidades Federativas</caption>
                     <thead>
                         <tr>
-                            <th>Estsdo</th>
-                            <th>Populção</th>
+                            <th scope="col">Estsdo</th>
+                            <th scope="col" style="width: 50px;">Populção</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
                             <td>São Paulo</td>
-                            <td>45. 919 049</td>
+                            <td class="num">45. 919 049</td>
                         </tr>
 
                         <tr>
                             <td>Minas Gerais</td>
-                            <td>21.16879.178</td>
+                            <td class="num">21.16879.178</td>
                         </tr>
 
                         <tr>
                             <td>Rio de Janeiro</td>
-                            <td>17.264.943</td>
+                            <td class="num">17.264.943</td>
                         </tr>
 
                         <tr>
                             <td>Bahia</td>
-                            <td>14.873.064</td>
+                            <td class="num">14.873.064</td>
                         </tr>
 
                         <tr>
                             <td>Paraná</td>
-                            <td>11.433.957</td>
+                            <td class="num">11.433.957</td>
                         </tr>
 
                         <tr>
                             <td>Rio Grande do Sul</td>
-                            <td>11.377.239</td>
+                            <td class="num">11.377.239</td>
                         </tr>
 
                         <tr>
                             <td>Pernabuco</td>
-                            <td>9.557.071</td>
+                            <td class="num">9.557.071</td>
                         </tr>
 
                         <tr>
                             <td>Ceará</td>
-                            <td>9.132.078</td>
+                            <td class="num">9.132.078</td>
                         </tr> 
 
                         <tr>
                             <td>Pará</td>
-                            <td>8.602.865</td>
+                            <td class="num">8.602.865</td>
                         </tr>
                         <tr>
                             <td>Santa Catarina</td>
-                            <td>7.164.788</td>
+                            <td class="num">7.164.788</td>
                         </tr>
                         <tr>
                             <td>Maranhão</td>
-                            <td>7.075.181</td>
+                            <td class="num">7.075.181</td>
                         </tr>
 
                         <tr>
                             <td>Goiás</td>
-                            <td>7.018.354</td>
+                            <td class="num">7.018.354</td>
                         </tr>
 
                         <tr>
                             <td>Amazonas</td>
-                            <td>4.144.597</td>
+                            <td class="num">4.144.597</td>
                         </tr>
 
                         <tr>
                             <td>Sepirito Santo</td>
-                            <td>4.018.650</td>
+                            <td class="num">4.018.650</td>
                         </tr>
 
                         <tr>
                             <td>Paraíba</td>
-                            <td>4.018.127</td>
+                            <td class="num">4.018.127</td>
                         </tr>
 
                         <tr>
                             <td>Rio Grande dp Norte</td>
-                            <td>3.506.853</td>
+                            <td class="num">3.506.853</td>
                         </tr>
 
                             <tr>
                                 <td>Mato Grosso</td>
-                                <td>3.484.466</td>
+                                <td class="num">3.484.466</td>
                             </tr>
                             
                             <tr>
                                 <td>Alagoas</td>
-                                <td>3.337.357</td>
+                                <td class="num">3.337.357</td>
                             </tr>
 
                             <tr>
                                 <td>Piauí</td>
-                                <td>3.273.227</td>
+                                <td class="num">3.273.227</td>
                             </tr>
 
                             <tr>
                                 <td>Distrito Federal</td>
-                                <td>3.015.268</td>
+                                <td class="num">3.015.268</td>
                             </tr>
                             <tr>
                                 <td>Mato Gross do Sul</td>
-                                <td>2.778.986</td>
+                                <td class="num">2.778.986</td>
                             </tr>
 
                             <tr>
                                 <td>Sergepe</td>
-                                <td>2.298.696</td>
+                                <td class="num">2.298.696</td>
                             </tr>
 
                             <tr>
                                 <td>Rondónia</td>
-                                <td>1.777.225</td>
+                                <td class="num">1.777.225</td>
                             </tr>
 
                             <tr>
                                 <td>Tocantins</td>
-                                <td>1.572.866</td>
+                                <td class="num">1.572.866</td>
                             </tr>
 
                             <tr>
                                 <td>Acre</td>
-                                <td>881.935</td>
+                                <td class="num">881.935</td>
                             </tr>
                             <tr>
                                 <td>Mapá</td>
-                                <td>845.731</td>
+                                <td class="num">845.731</td>
                             </tr>
 
                             <tr>
                                 <td>Roraima</td>
-                                <td>605.761</td>
+                                <td class="num">605.761</td>
                             </tr>
-                        
                     </tbody>
 
                     <tfoot>
                         <tr>
-                            <th>Total de Habitantes</th>
+                            <th scope="row">Total de Habitantes</th>
                             <td>0000</td>
                         </tr>
                     </tfoot>
                 </table>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eligendi sint tempore harum tenetur nobis quidem eum repudiandae culpa mollitia minus dolore doloribus ipsa, doloremque voluptatem, autem incidunt, suscipit numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nostrum ut rem itaque, error aliquam in laborum, culpa veritatis delectus voluptatem inventore sint labore eius velit ipsum, quos saepe similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorem ducimus at rerum sed corrupti itaque aut asperiores non. Tempore explicabo sunt delectus eaque magnam adipisci doloremque illo facere at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aspernatur nihil mollitia facere? Asperiores veniam aspernatur rem quod eius dolor numquam enim quam eum, nulla dolores libero aliquid architecto ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cupiditate aut ducimus. Nobis obcaecati molestias autem et necessitatibus iure aliquid animi ipsum, rem placeat ducimus numquam unde soluta tempora exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur aut veniam id soluta recusandae, commodi adipisci aperiam maxime, itaque est expedita iure. Ipsum deserunt error vitae nemo vel aliquam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nam dolorum vel nemo impedit consequatur deleniti odit dolores asperiores! Consequuntur iusto error cumque quas vero, optio modi eligendi alias provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse aliquid nihil alias consequatur quasi iste, quod blanditiis ipsam dolores odio provident consectetur neque nostrum doloremque! Quia magnam fugit assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, maiores amet similique adipisci inventore voluptatum laudantium exercitationem eum repellat voluptatem. Expedita necessitatibus deleniti libero voluptatem rem? Quisquam cumque iusto repellat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, culpa illo? Adipisci minus animi pariatur, ea alias suscipit exercitationem obcaecati modi, minima, distinctio reiciendis tempora provident vel impedit facere? A. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dolorum! Totam facere at, vero nesciunt dignissimos aspernatur perspiciatis hic ex id cum placeat sed magnam ipsam doloribus blanditiis illum? Dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus enim expedita at? Quibusdam sapiente aspernatur culpa doloremque ab in facilis aperiam, totam, nam, obcaecati accusamus veniam possimus enim quo dicta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt laboriosam, sequi quibusdam iusto aliquam cupiditate autem alias vitae veritatis nesciunt eos atque aliquid. Beatae dolor nostrum voluptatum maiores ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas dolore quasi praesentium obcaecati recusandae maxime eos, possimus, numquam repellat suscipit. Soluta provident accusantium iste amet, reprehenderit maiores? Eum, natus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus delectus praesentium cupiditate aspernatur excepturi. Consequuntur, itaque repellat tenetur ab asperiores eos atque porro possimus obcaecati! A nisi atque nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae optio iusto recusandae incidunt nulla neque autem magnam ullam suscipit beatae minima obcaecati explicabo sunt ducimus consectetur sed, repellendus dolor omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi similique eius excepturi voluptatum vel corporis inventore velit laboriosam, maiores repudiandae facilis minus tempora enim hic non harum impedit atque?</p>
     
 </body>
 </html>
