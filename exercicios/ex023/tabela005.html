@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cnome, col.csexo {
+            background-color: aqua;
+        }
+
+        col.cidade, col.cprof {
+            background-color: yellow;
+        }
+         col.cgrupo {
+            background-color: red;
+           
+         }
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+            <col class="cgrupo" span="2">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+            <th scope="col">Cor</th>
+            <th scope="col">Nacionalidade</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td>Parda</td>
+            <td>Brasileira</td>
+        </tr>
+
+        <tr>
+            <td>Claudo</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+            <td>Negro</td>
+            <td>Argetina</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Prefessor</td>
+            <td>Branco</td>
+            <td>Espanhola</td>
+        </tr>
+
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+            <td>Branco</td>
+            <td>Africana</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+            <td>Branca</td>
+            <td>Mexicana</td>
+        </tr>
+
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+            <td>Morena</td>
+            <td>Canadence</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
