@@ -49,7 +49,7 @@ span#burguer:hover {
     color: white;
     border-top: 2px solid rgb(151, 151, 151);
  }
-
+  
  menu > ul > li > a:hover {
     background-color: rgb(156, 140, 140);
     color: black;
