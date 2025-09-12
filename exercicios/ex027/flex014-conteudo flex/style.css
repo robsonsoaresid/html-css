@@ -10,8 +10,8 @@
     line-height: 1.5em;
 }
 
-p,h1,h2 {
-    margin-bottom: 20px;
+p, h1, h2 {
+    margin-bottom: 10px;
     text-align: justify;
 }
 
@@ -22,4 +22,34 @@ header, section.normal {
 section.flex-content {
     padding: 20px;
     background-color: rgb(167, 166, 166);
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+
+
+article.text-media {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+}
+
+article.media-text {
+   display: flex;
+   flex-flow: row wrap-reverse;
+   justify-content: space-between;
+}
+
+article > div.text {
+    flex-flow: 1 1 400px; 
+
+    border: 2px dashed yellow;
+}
+
+article > div.media {
+    flex-flow: 1 0 400px;
+
+    border: 2px dashed blue;
 }
