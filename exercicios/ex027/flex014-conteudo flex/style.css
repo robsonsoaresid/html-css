@@ -10,9 +10,15 @@
     line-height: 1.5em;
 }
 
-p, h1, h2 {
+p {
     margin-bottom: 10px;
     text-align: justify;
+}
+
+h1, h2 {
+    margin: 20px;
+    line-height: 1.2em;
+    text-align: left;
 }
 
 header, section.normal {
@@ -26,10 +32,7 @@ section.flex-content {
     display: flex;
     flex-flow: column nowrap;
 }
-
-
-
-
+ 
 article.text-media {
    display: flex;
    flex-flow: row wrap;
@@ -43,13 +46,24 @@ article.media-text {
 }
 
 article > div.text {
-    flex-flow: 1 1 400px; 
+    flex: 1 1 500px; 
 
-    border: 2px dashed yellow;
 }
 
 article > div.media {
-    flex-flow: 1 0 400px;
+    flex: 1 0 400px;
 
-    border: 2px dashed blue;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 450px;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
 }
